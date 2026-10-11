@@ -88,16 +88,6 @@ pipeline {
             }
         }
 
-        stage('Load Image into Minikube') {
-            steps {
-                sh '''
-                    set -eu
-                    minikube status
-                    minikube image load "$APP_IMAGE"
-                    minikube image ls | grep 'python-devops-app'
-                '''
-            }
-        }
     }
 
     post {
