@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        APP_IMAGE = 'python-devops-app:ci-${BUILD_NUMBER}'
+        APP_IMAGE = 'python-devops-app:1.0'
     }
 
     stages {
